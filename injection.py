@@ -1,8 +1,8 @@
-import os
+import subprocess
 
 def main():
-    user_input = input("Enter command: ")
-    os.system(user_input)  # 🚨 This will trigger CodeQL alert
+    cmd = input("Enter command: ")
+    subprocess.call(cmd, shell=True)  # 🚨 definite command injection
 
 if __name__ == "__main__":
     main()
