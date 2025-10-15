@@ -1,4 +1,8 @@
 import os
 
-def unsafe(user_input):
-    os.system("echo " + user_input)  # 🚨 Command injection
+def main():
+    user_input = input("Enter command: ")
+    os.system(user_input)  # 🚨 This will trigger CodeQL alert
+
+if __name__ == "__main__":
+    main()
