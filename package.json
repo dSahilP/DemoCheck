@@ -1,0 +1,6 @@
+{
+  "name": "demo-vulns",
+  "version": "1.0.0",
+  "main": "js_exec.js",
+  "license": "MIT"
+}
